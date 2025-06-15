@@ -6896,9 +6896,33 @@ fieldset:disabled .btn {
 .d-inline-flex {
   display: inline-flex !important;
 }
-.d-none {
-  display: none !important;
+.d-block {
+  display: block !important;
 }
+
+@media (min-width: 992px) {
+  .porfile-img {
+    margin: 0 auto 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .porfile-img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
